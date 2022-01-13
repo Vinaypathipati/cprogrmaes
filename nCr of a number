@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int fact(int a);
+
+int main()
+{
+int n,r,nCr;
+printf("enter n value");
+scanf("%d",&n);
+printf("enter r value");
+scanf("%d",&r);
+nCr=fact(n)/(fact(r)*fact(n-r));
+printf("nCr is %d",n,r,nCr);
+}
+int fact(int a);
+{
+int i,fact=1;
+for(i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+return fact;
+}
